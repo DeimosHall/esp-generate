@@ -25,8 +25,15 @@ You can also directly download pre-compiled [release binaries] or use [`cargo-bi
    1. Using the Terminal User Interface (TUI):
 
       ```
-      esp-generate
+      esp-generate --chip <CHIP> <NAME>
       ```
+
+      For example, to generate a project for the ESP32 C3, you would run:
+
+      ```
+      esp-generate --chip esp32c3 your-project
+      ```
+
       You will be prompted to select a target chip and name for your project, after which you would use TUI to select the other options you need for your project.
 
    2. Using the Command Line Interface (CLI), adding the options to the `esp-generate` command:
